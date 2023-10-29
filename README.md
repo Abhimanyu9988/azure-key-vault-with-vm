@@ -7,12 +7,11 @@ This repository contains Terraform configurations and scripts for provisioning A
 - [Overview](#overview)
 - [Prerequisites](#prerequisites)
 - [Usage](#usage)
-  - Terraform Deployment
-  - Post-Deployment Script
-- Variables
-- [Inside-VM Installation Script](#inside-vm-installation-script)
-- [Contributing](#contributing)
-- [License](#license)
+  - [Terraform Deployment](https://github.com/Abhimanyu9988/azure-key-vault-with-vm/blob/main/main.tf)
+  - [Post-Deployment Script](https://github.com/Abhimanyu9988/azure-key-vault-with-vm/blob/main/after-terraform-cmd.sh)
+- [Variables](https://github.com/Abhimanyu9988/azure-key-vault-with-vm/blob/main/variables.tf)
+- [Inside-VM Installation Script](https://github.com/Abhimanyu9988/azure-key-vault-with-vm/blob/main/install-script-inside-vm.sh)
+
 
 ## Overview
 
@@ -44,3 +43,7 @@ Before getting started, make sure you have the following:
    terraform init
    terraform apply --auto-approve
 
+### Assigning managed identity and configuring Key Vault policies 
+
+```bash
+./after-terraform-cmd.sh
