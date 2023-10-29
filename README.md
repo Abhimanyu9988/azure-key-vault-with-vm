@@ -7,9 +7,9 @@ This repository contains Terraform configurations and scripts for provisioning A
 - [Overview](#overview)
 - [Prerequisites](#prerequisites)
 - [Usage](#usage)
-  - [Terraform Deployment]
-  - [Post-Deployment Script]
-- [Variables]
+  - Terraform Deployment
+  - Post-Deployment Script
+- Variables
 - [Inside-VM Installation Script](#inside-vm-installation-script)
 - [Contributing](#contributing)
 - [License](#license)
