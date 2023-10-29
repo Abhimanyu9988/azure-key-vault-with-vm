@@ -64,13 +64,14 @@ For secret_name :
 output "azurerm_key_vault_secret_name" {
   value = azurerm_key_vault_secret.example.name
 }
+```
 
 For key_value_name : 
-````
+```
 output "key_vault_name" {
   value = azurerm_key_vault.azurerm_key_vault.name
 }
-
+```
 
 3. Save the changes and run the script inside the VM.
 
