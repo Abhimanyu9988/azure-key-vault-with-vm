@@ -7,7 +7,7 @@ This repository contains Terraform configurations and scripts for provisioning A
 - [Overview](#overview)
 - [Prerequisites](#prerequisites)
 - [Usage](#usage)
-  - [Terraform Deployment](#terraform-deployment)
+  - [Terraform Deployment](#https://github.com/Abhimanyu9988/azure-key-vault-with-vm/blob/main/main.tf)
   - [Post-Deployment Script](#post-deployment-script)
 - [Variables](#variables)
 - [Inside-VM Installation Script](#inside-vm-installation-script)
