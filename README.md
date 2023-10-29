@@ -58,13 +58,19 @@ You may need to edit this script if you have additional setup requirements speci
 1. Open `install-script-inside-vm.sh` in your Azure VM.
 
 2. Modify the script with key_vault_name and secret_name. 
-For secret_name : output "azurerm_key_vault_secret_name" {
+
+For secret_name : 
+```
+output "azurerm_key_vault_secret_name" {
   value = azurerm_key_vault_secret.example.name
 }
 
-For key_value_name : output "key_vault_name" {
+For key_value_name : 
+````
+output "key_vault_name" {
   value = azurerm_key_vault.azurerm_key_vault.name
 }
+
 
 3. Save the changes and run the script inside the VM.
 
