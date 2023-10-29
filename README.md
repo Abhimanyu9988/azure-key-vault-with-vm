@@ -45,5 +45,33 @@ Before getting started, make sure you have the following:
 
 ### Assigning managed identity and configuring Key Vault policies 
 
+#### Inside-VM Installation Script
+
+The `install-script-inside-vm.sh` script inside the Azure VM performs the following tasks:
+
+1. Sets up the required repositories.
+2. Installs Python3 and pip.
+3. Installs Azure SDK packages for authentication and Key Vault access.
+
+You may need to edit this script if you have additional setup requirements specific to your project. To customize the script:
+
+1. Open `install-script-inside-vm.sh` in your Azure VM.
+
+2. Modify the script with key_vault_name and secret_name. 
+For secret_name : output "azurerm_key_vault_secret_name" {
+  value = azurerm_key_vault_secret.example.name
+}
+
+For key_value_name : output "key_vault_name" {
+  value = azurerm_key_vault.azurerm_key_vault.name
+}
+
+3. Save the changes and run the script inside the VM.
+
+The script also creates a Python script to fetch secrets from Key Vault and demonstrates Key Vault secret retrieval.
+
+Feel free to customize the installation script to suit your specific needs.
+
+
 ```bash
 ./after-terraform-cmd.sh
